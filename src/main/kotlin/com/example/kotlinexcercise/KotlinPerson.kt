@@ -10,9 +10,9 @@ data class KotlinPerson(val id: Long?, val title: String?, val firstName: String
             throw NullPointerException()
     }
 
-    fun getAge(): Int {
-        return getAge(dateOfBirth)
-    }
+    val age : Int
+        get() = getAge(dateOfBirth)
+
 
 
     override fun toString() = "$title $firstName $surname"

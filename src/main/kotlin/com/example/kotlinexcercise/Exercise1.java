@@ -10,6 +10,8 @@ public class Exercise1 {
         System.out.println (john + "'s age is " + john.getAge());
         System.out.println (jane + "'s age is " + jane.getAge());
         System.out.println ("The age of someone born on 3rd May 1988 is " + JavaPerson.getAge(new GregorianCalendar(1988,5,3)));
+
+        //JavaPerson dave = new JavaPerson(2L, null, "Jane", "Green", null);
     }
 
 }
