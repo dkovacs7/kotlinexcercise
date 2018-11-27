@@ -5,6 +5,12 @@ import java.util.*
 
 data class KotlinPerson(val id: Long, val title: String, val firstName: String, val surname: String, val dateOfBirth: Calendar?) {
 
+    var favoriteColor : String? = null
+
+    fun getUpperCaseColor() : String {
+        return favoriteColor?.toUpperCase() ?: ""
+    }
+
     val age: Int?
         get() = getAge(dateOfBirth)
 
@@ -39,7 +45,7 @@ fun main(args: Array<String>) {
 
     val olderPerson = if ( john.safeAge > jane.safeAge) john else jane
 
-    println("The older person is $olderPerson")
+    println("The older person is $olderPerson and the older person has the following upper case color ${olderPerson.getUpperCaseColor()}")
 }
 
 
