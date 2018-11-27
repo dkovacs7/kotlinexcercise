@@ -12,6 +12,4 @@ fun main(args: Array<String>) {
     println("$jane's age is ${jane.age}")
     println("The age of someone born on 3rd May 1988 is ${KotlinPerson.getAge(GregorianCalendar(1988,5,3))}")
 
-    //val dave = KotlinPerson(2L, null, "Jane", "Green", null)
-
 }
